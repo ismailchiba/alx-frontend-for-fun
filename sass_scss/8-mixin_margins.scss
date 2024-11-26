@@ -1,0 +1,16 @@
+/* Mixin */
+
+@mixin margins($first: 0) {
+    margin-left: $first;
+    margin-right: $first;
+}
+
+/* Usage */
+
+body {
+    @include margins(10px);
+}
+
+div {
+    @include margins(15px);
+}
